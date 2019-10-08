@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script type="text/javascript" src="/javascripts/jquery.js"></script>
+  <script type="text/javascript" src="/javascripts/index.js"></script>
+  
+</head>
+
+<body>
+  <p id="p1"><%= title %></p>
+  <a id="a1" href="http://jquery.com/">jQuery</a>
+  <div id="div1">
+    <script>
+      for (let j = 0; j < 10; j++) {
+        var str = '<form action="/users" method="POST" > \
+      账号： <input type="number" name="number"/>\
+      密码： <input type="password" name="password"/>\
+      <button type="submit"> 提交 </button>\
+      <button type="reset">重置</button>\
+    </form>'
+        for (let i = 0; i < 5; i++) {
+          document.write(str)
+        }
+      }
+    </script>
+  </div>
+  <div class="div1">
+    <script>
+
+    </script>
+
+  </div>
+
+  <div class="div2">
+
+  </div>
+  <a href="http://www.baidu.com" id="href" target="_blank" onclick=clickHandle() onmouseover=mouseOver()>baidu.com</a>
+
+
+  <form action="/users" method="POST">
+    账号： <input type="number" name="number" />
+    密码： <input type="password" name="password" />
+    <button type="submit"> 提交 </button>
+    <button type="reset">重置</button>
+  </form>
+  <div class="icobtn_up"><button id="button" onClick="$(window).stop().scrollTo(0,800);">dianwo</button> </div>
+
+
+
+
+  <button id="button1">开始动画</button>
+<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。</p>
+<div id="div1">
+    tupian<img id="img" src="" >
+</div>
+<button id="button2"> 点击我可以替换以下内容</button>
+<div id="myDiv">我是准备被替换的</div>
+
+
+
+<script>
+    var ws = new WebSocket("ws://localhost:8001");
+    
+    ws.onopen = function(){
+      alert("open");
+      ws.send("WebSocket  hellowrold!!");
+    };
+    ws.onmessage = function(ev){
+      alert(ev.data);
+    };
+    ws.onclose = function(ev){
+      alert("close");
+    };
+    ws.onerror = function(ev){
+      console.log(ev);
+      alert("error");
+    };
+    </script>
+  
+
+
+</body>
+
+</html>

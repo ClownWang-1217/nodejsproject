@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-attachment: fixed;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size:100% 100%; 
+  background-image: url('https://n.sinaimg.cn/tech/transform/727/w381h346/20190722/11c6-iaantfi6156168.gif');
+  
+}
+
+a {
+  color: #00B7FF;
+}

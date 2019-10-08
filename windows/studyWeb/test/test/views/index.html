@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="http://www.baidu.com" id = "href" target="_blank" onclick=clickHandle()>baidu.com</a>
+    <script>
+      function clickHandle()
+      {
+        setTimeout(function(){
+          var a = document.getElementById('href');
+          a.style.color = 'red';
+        },3000)
+      }
+    </script>
+  </body>
+</html>
